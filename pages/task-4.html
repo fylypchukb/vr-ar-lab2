@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4 — AR Model Placement</title>
+  </head>
+  <body>
+    <a id="back-btn" href="/">← Home</a>
+
+    <div id="t4-panel">
+      <div class="sp-heading">Task 4 — Settings</div>
+      <div class="sp-title" style="font-size:19px">Configure Model</div>
+
+      <div id="t4-load-status" class="t4-load-status">Loading model…</div>
+
+      <div class="t4-section">
+        <div class="t4-section-label">Material</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center">
+          <button class="mat-btn on" data-key="realistic">Realistic</button>
+          <button class="mat-btn" data-key="gold">Gold</button>
+          <button class="mat-btn" data-key="glass">Glass</button>
+          <button class="mat-btn" data-key="chrome">Chrome</button>
+          <button class="mat-btn" data-key="glow">Glow</button>
+        </div>
+      </div>
+
+      <div class="t4-section">
+        <div class="t4-section-label">Directional Light</div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center">
+          <button id="toggleDirLightBtn" class="sp-toggle on">ON</button>
+          <div style="display:flex;align-items:center;gap:6px">
+            <button id="decIntBtn" class="t4-icon-btn">−</button>
+            <span id="intensityLabel" class="t4-intensity-label">3.0 lx</span>
+            <button id="incIntBtn" class="t4-icon-btn">+</button>
+          </div>
+          <button id="lightColorBtn" style="padding:6px 14px;border-radius:6px;background:rgba(255,255,255,0.12);color:#fff;font-family:monospace;font-size:12px;cursor:pointer;border:1px solid #fff44">White</button>
+        </div>
+      </div>
+
+      <div class="t4-section">
+        <div class="t4-section-label">Animations</div>
+        <div style="display:flex;gap:10px;justify-content:center">
+          <div class="t4-anim-col">
+            <span class="t4-anim-label">Jump</span>
+            <button id="toggleJumpBtn" class="sp-toggle">OFF</button>
+          </div>
+          <div class="t4-anim-col">
+            <span class="t4-anim-label">Rotation</span>
+            <button id="toggleRotationBtn" class="sp-toggle on">ON</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sp-hint">
+        Press <strong>START AR</strong> below &middot; tap surface to place
+      </div>
+    </div>
+
+    <script type="module" src="/src/task-4.js"></script>
+  </body>
+</html>

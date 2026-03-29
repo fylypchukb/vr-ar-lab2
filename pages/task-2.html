@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2 — AR GLTF Model</title>
+  </head>
+  <body>
+    <a id="back-btn" href="/">← Home</a>
+
+    <div id="ctrl2-panel">
+      <div class="c2-header">
+        <span class="c2-title">Model Controls</span>
+        <button id="ctrl2-toggle" class="c2-toggle-btn" title="Collapse">−</button>
+      </div>
+
+      <div id="ctrl2-body">
+
+        <div class="c2-section">
+          <div class="c2-section-label">Rotation</div>
+          <button id="btn2-rotation" class="c2-btn on">Disable Rotation</button>
+          <div class="c2-radio-row">
+            <button class="c2-radio-btn" data-axis="x">X</button>
+            <button class="c2-radio-btn on" data-axis="y">Y</button>
+            <button class="c2-radio-btn" data-axis="z">Z</button>
+          </div>
+        </div>
+
+        <div class="c2-sep"></div>
+
+        <div class="c2-section">
+          <div class="c2-section-label">Material</div>
+          <select id="c2-material" class="c2-select">
+            <option value="original">Original</option>
+            <option value="gold">Gold Metal</option>
+            <option value="silver">Silver Metal</option>
+            <option value="emerald">Emerald</option>
+            <option value="glass">Glass</option>
+          </select>
+        </div>
+
+        <div class="c2-sep"></div>
+
+        <div class="c2-section">
+          <div class="c2-section-label">Scene Light</div>
+          <button id="btn2-scene-light" class="c2-btn on">Scene: ON</button>
+        </div>
+
+        <div class="c2-sep"></div>
+
+        <div class="c2-section">
+          <div class="c2-section-label">Model Light</div>
+          <button id="btn2-model-light" class="c2-btn on">Model: ON</button>
+
+          <div class="c2-radio-row">
+            <button class="c2-type-btn on" data-type="point">Point</button>
+            <button class="c2-type-btn" data-type="spot">Spot</button>
+            <button class="c2-type-btn" data-type="directional">Dir</button>
+          </div>
+
+          <label class="c2-field-label">Intensity
+            <span id="c2-intensity-val">5</span>
+          </label>
+          <input type="range" id="c2-intensity" class="c2-slider"
+                 min="0" max="20" step="0.5" value="5" />
+
+          <label class="c2-field-label">Light Color</label>
+          <input type="color" id="c2-color" class="c2-color" value="#ffffff" />
+        </div>
+
+      </div>
+    </div>
+
+    <script type="module" src="/src/task-2.js"></script>
+  </body>
+</html>
