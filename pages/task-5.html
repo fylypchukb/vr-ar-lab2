@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 5 — AR Measurement Tool</title>
+  </head>
+  <body>
+    <a id="back-btn" href="/">← Home</a>
+
+    <div id="t5-panel">
+      <div class="sp-heading">Task 5 — AR Measurement</div>
+      <div class="sp-title">Measure Real Surfaces</div>
+
+      <div class="t4-section" style="max-width:320px">
+        <div class="t4-section-label">How it works</div>
+        <div class="t5-step">① Aim the reticle at a real surface</div>
+        <div class="t5-step">② Tap to place the first point</div>
+        <div class="t5-step">③ Aim at a second surface location</div>
+        <div class="t5-step">④ Tap to place the second point</div>
+        <div class="t5-step">⑤ Read the distance in metres</div>
+        <div class="t5-step" style="color:rgba(100,220,180,0.7)">
+          Tap again to start a new measurement
+        </div>
+      </div>
+
+      <div class="sp-hint">
+        Press <strong>START AR</strong> below to begin
+      </div>
+    </div>
+
+    <!-- In-AR HUD overlay -->
+    <div id="t5-hud">
+      <div id="t5-status">Tap to place first point</div>
+      <div id="t5-distance"></div>
+      <button id="t5-reset-btn" class="sp-btn t5-reset-hidden">Reset all</button>
+    </div>
+
+    <script type="module" src="/src/task-5.js"></script>
+  </body>
+</html>

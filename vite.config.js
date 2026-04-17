@@ -20,6 +20,8 @@ export default {
         task2: resolve(__dirname, 'pages/task-2.html'),
         task3: resolve(__dirname, 'pages/task-3.html'),
         task4: resolve(__dirname, 'pages/task-4.html'),
+        task5: resolve(__dirname, 'pages/task-5.html'),
+        task6: resolve(__dirname, 'pages/task-6.html'),
       },
     },
   },
